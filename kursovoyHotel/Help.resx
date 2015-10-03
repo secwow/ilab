@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Чтобы начать работать с программой, запустите kursovoyHotel.exe. У вас на компьютере должен быть уставлен Microsoft .NET Framework 4.5.
+Вверху формы стандартно находится строка меню, содержащая всего две ячейки: «Файл» и «Справка». Пользователь в меню файл должен выбрать открыть созданную ранее базу или создать новую. 
+Слева на форме находится панель состояния. На ней отображается все информация о выбранном номере. Изменять выбранный номер можно с помощью клика мышки по ячейке с нужным номером или с помощью стрелок на клавиатуре. Зелёным цветом подсвечены номера класса стандарт, голубым - полулюкс, красным - люкс. Занятые номера имеют более темный цвет.
+На панели состояния имеется также три кнопки, которые являются активными или неактивными в зависимости от состояния выбранного номера. Кнопка «Заселить» активна, если выбранный номер не занят; «Освободить» - если номер занят, и дата выезда совпадает с текущей датой; «Изменить дату отъезда» - если номер занят.
+Для подбора номера следует ввести желаемый интервал стоимости и количество мест, затем нажать на кнопку «Подобрать», после этого останутся подсвеченными только те номера, которые свободны и удовлетворяют заданным критериям. Чтобы вернуть таблицу номеров к исходному состоянию следует наддать на кнопку «Сбросить».
+Для удобства контроля выезда постояльцев есть функция выбора постояльцев, отъезжающих сегодня. Для того чтобы ей воспользоваться, необходимо нажать на соответствующую кнопку. Для возврата таблицы в исходное состояние аналогично следует нажать на кнопку «Сбросить».
+Для того, чтобы заселить гостя в номер необходимо выбрать в таблице номер и нажать на кнопку «Заселить».
+На панели информации о госте следует ввести все данные (отчество не обязательно) и нажать на кнопку «Добавить» повторить действия для все постояльцев, заселяемых в выбранный номер. Список таких постояльце отображается на форме слева вверху. Далее следует установить дату выезда (дата приезда по умолчанию соответствует текущей) и выбрать плательщика из выпадающего списка. Для завершения регистрации и оформления квитанции нажать на соответствующую кнопку. После этого откроется квитанции в Excel.
+После этого форма регистрации закроется, а информация на панели состояния главной формы обновится. При необходимости продления срока пребывания или досрочного отъезда необходимо нажать на кнопку «Изменение даты отъезда», откроется форма похожая на форму регистрации, на ней нужно выбрать новую дату и нажать кнопку «Перерасчет и оформление дополнительной квитанции». При этом в Excel будет открыта дополнительная квитанция с указанием суммы доплаты или суммы возврата.
+При нажатии на главной форме на кнопку «Поиск гостя по произвольному признаку» открывается форма поиска.
+На этой форме можно устанавливать различные фильтры: по номеру, по стране, по городу, по интервалам, в которые входят дата рождения, приезда и отъезда. После установки некоторого фильтра он становится неактивным, а в таблице отображается информация обо всех постояльцах, удовлетворяющих заданному значению признака. После этого можно устанавливать и другие фильтры. Для того чтобы начат поиск заново нужно нажать на кнопку «Сбросить фильтры» и все фильтры вновь станут доступными. 
+Особый фильтр - это поиск по части имени. Чтобы им воспользоваться, в строку ввода нужно ввести часть ФИО. Причем регистр не важен, и результат поиска выдаст всех постояльцев, в ФИО которых встречаются сочетания букв из введенных (сочетания образуют буквы, разделённые пробелом).
+Кроме того это форма служи для исправления информации о гостях. Изменят можно все ячейки кроме дат приезда и отъезда.
+Для сохранения изменений можно нажать на кнопку «Сохранить» на главной форме или выбрать в меню «Файл» пункт «Сохранить». Также на главной форме присутствует меню «Справка», при нажатии открывается форма с инструкцией пользователю.
+</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICUAAAEAIAA8EwAAFgAAACgAAAAgAAAASgAAAAEAIAAAAAAAgBIAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADvQbsE70G7Cu9B
+        uxLvQbsW70G7Fu9BuxLvQbsK70G7BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA70G7BO9B
+        uwzvQbsW70G7IO9BuybvQbsm70G7IO9BuxbvQbsM70G7BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO9B
+        uwTvQbsM70G7GO9BuybvQbsy7za4/+82uP/vQbsy70G7Ju9BuxjvQbsM70G7BAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AADvQbsE70G7DO9BuxjvQbsk70G7MO8+uv/vWML/71jC/+8+uv/vQbsw70G7JO9BuxjvQbsM70G7BAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA70G7BO9BuwzvQbsY70G7JO9Buy7vPrr/71jC/+9tyf/vbcn/71jC/+89uv/vQbsu70G7JO9B
+        uxjvQbsM70G7BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADvQbsE70G7Bu9B
+        uwzvQbsO70G7Eu9BuxTvQbsY70G7Hu9BuybvQbsw7z+7/+9Ywv/vbcn/723J/+9tyf/vbcn/71jC/+8/
+        u//vQbsw70G7Ju9Bux7vQbsY70G7FO9BuxLvQbsO70G7DO9BuwbvQbsEAAAAAAAAAAAAAAAA70G7BO9B
+        uwrvQbsS70G7Gu9BuyDvQbsk70G7Ju9BuyrvQbsu70G7Mu9Au//vWML/723J/+9tyf/vbcn/723J/+9t
+        yf/vbcn/71jC/+9Bu//vQbsy70G7Lu9BuyrvQbsm70G7JO9BuyDvQbsa70G7Eu9BuwrvQbsEAAAAAO9B
+        uwTvQbsK70G7FO9BuyLvQbss70G7NO9BuzjvQbs470G7Ou9BuzrvQLv/71jC/+9tyf/vbcn/723J/+9t
+        yf/vbcn/723J/+9tyf/vbcn/71jC/+8/u//vQbs670G7Ou9BuzjvQbs470G7NO9BuyzvQbsi70G7FO9B
+        uwrvQbsE70G7Bu9BuxLvQbsi70G7OO81uP/vPbr/70G7/+9Bu//vQbv/70G7/+9Ywv/vbcn/723J/+9t
+        yf/vbcn/723J/+9tyf/vbcn/723J/+9tyf/vbcn/71jC/+9Au//vQbv/70C7/+9Bu//vP7v/7z+7/+9B
+        uzjvQbsi70G7Eu9BuwbvQbsM70G7Gu9BuyzvNrj/71TB/+9nx//vbcn/723J/+9tyf/vbcn/723J/+9t
+        yf/vbcn/723J/+9tyf/vbcn/723J/+9tyf/vbcn/723J/+9tyf/vbcn/723J/+9tyf/vbcn/723J/+9n
+        x//vVMH/7z+7/+9BuyzvQbsa70G7DO9Buw7vQbsg70G7NO89uv/vccr/73PL/+9tyf/vhc//723J/+99
+        zf/vc8v/723J/++Fz//vbcn/733N/+9zy//vbcn/74XP/+9tyf/vfc3/73PL/+9tyf/vhc//723J/+99
+        zf/vc8v/723J/+96zP/vPrr/70G7NO9BuyDvQbsO70G7Eu9BuyTvQbs470G7/++S0//v5u3/79vo/++8
+        3//vbcn/75LT/+/m7f/v2+j/77zf/+9tyf/vktP/7+bt/+/b6P/vvN//723J/++S0//v5u3/79vo/++8
+        3//vbcn/75LT/+/m7f/v2+j/77zf/+9Bu//vQbs470G7JO9BuxLvQbsS70G7Ju9BuzjvP7v/76XZ/+/v
+        7//v7+//78vl/+9vyf/vpdn/7+/v/+/v7//vy+X/72/J/++l2f/v7+//7+/v/+/L5f/vb8n/76XZ/+/v
+        7//v7+//78vl/+9vyf/vpdn/7+/v/+/v7//vy+X/70K8/+9BuzjvQbsm70G7Eu9BuxLvQbsm70G7OO9O
+        v//vy+X/7+ft/+/v7//v1uj/75nV/+/L5f/v5+3/7+/v/+/W6P/vmdX/78vl/+/n7f/v7+//79bo/++Z
+        1f/vy+X/7+ft/+/v7//v1uj/75nV/+/L5f/v5+3/7+/v/+/W6P/vcMr/70G7OO9BuybvQbsS70G7Eu9B
+        uybvQbs470C7/+9tyf/vnNb/78Hh/+9tyf/vbcn/723J/++c1v/vweH/723J/+9tyf/vbcn/75zW/+/B
+        4f/vbcn/723J/+9tyf/vnNb/78Hh/+9tyf/vbcn/723J/++c1v/vweH/723J/+9Au//vQbs470G7Ju9B
+        uxLvQbsS70G7Ju9BuzjvQbv/723J/+9tyf/ve8z/723J/+9tyf/vbcn/723J/+97zP/vbcn/723J/+9t
+        yf/vbcn/73vM/+9tyf/vbcn/723J/+9tyf/ve8z/723J/+9tyf/vbcn/723J/+97zP/vbcn/70G7/+9B
+        uzjvQbsm70G7Eu9BuxLvQbsm70G7OO9Au//vbcn/723J/+9tyf/vbcn/723J/+9tyf/vbcn/723J/+9t
+        yf/vbcn/723J/+9tyf/vbcn/723J/+9tyf/vbcn/723J/+9tyf/vbcn/723J/+9tyf/vbcn/723J/+9t
+        yf/vQbv/70G7OO9BuybvQbsS70G7Eu9BuybvQbs470C7/+9tyf/vbcn/723J/+/v7//v7+//7+/v/+/v
+        7//v7+//7+/v/+9tyf/vbcn/723J/+9tyf/vbcn/723J/+/v7//v7+//7+/v/+/v7//v7+//7+/v/+9t
+        yf/vbcn/723J/+9Au//vQbs470G7Ju9BuxLvQbsS70G7Ju9BuzjvQbv/723J/+9tyf/vbcn/7+/v/+/v
+        7//v7+//7+/v/+/v7//v7+//723J/+9tyf/vbcn/723J/+9tyf/vbcn/7+/v/+/v7//v7+//7+/v/+/v
+        7//v7+//723J/+9tyf/vbcn/70C7/+9BuzjvQbsm70G7Eu9BuxLvQbsm70G7OO9Au//vbcn/723J/+9t
+        yf/v7+//7+/v/+/v7//v7+//7+/v/+/v7//vbcn/723J/+9tyf/vbcn/723J/+9tyf/v7+//7+/v/+/v
+        7//v7+//7+/v/+/v7//vbcn/723J/+9tyf/vQLv/70G7OO9BuybvQbsS70G7Eu9BuybvQbs470C7/+9t
+        yf/vbcn/723J/+/v7//v7+//7+/v/+/v7//v7+//7+/v/+/v7//v7+//7+/v/+/v7//v7+//7+/v/+/v
+        7//v7+//7+/v/+/v7//v7+//7+/v/+9tyf/vbcn/723J/+9Au//vQbs470G7Ju9BuxLvQbsS70G7Ju9B
+        uzjvQLv/723J/+9tyf/vbcn/7+/v/+/v7//v7+//7+/v/+/v7//v7+//7+/v/+/v7//v7+//7+/v/+/v
+        7//v7+//7+/v/+/v7//v7+//7+/v/+/v7//v7+//723J/+9tyf/vbcn/70C7/+9BuzjvQbsm70G7Eu9B
+        uxLvQbsm70G7OO9Au//vbcn/723J/+9tyf/v7+//7+/v/+9tyf/vbcn/7+/v/+/v7//vbcn/723J/+/v
+        7//v7+//723J/+9tyf/v7+//7+/v/+9tyf/vbcn/7+/v/+/v7//vbcn/723J/+9tyf/vQbv/70G7OO9B
+        uybvQbsS70G7Eu9BuybvQbs470C7/+9tyf/vbcn/723J/+/v7//v7+//723J/+9tyf/v7+//7+/v/+9t
+        yf/vbcn/7+/v/+/v7//vbcn/723J/+/v7//v7+//723J/+9tyf/v7+//7+/v/+9tyf/vbcn/723J/+9A
+        u//vQbs470G7Ju9BuxLvQbsS70G7Ju9BuzjvQbv/723J/+9tyf/vbcn/7+/v/+/v7//vbcn/723J/+/v
+        7//v7+//723J/+9tyf/v7+//7+/v/+9tyf/vbcn/7+/v/+/v7//vbcn/723J/+/v7//v7+//723J/+9t
+        yf/vbcn/70G7/+9BuzjvQbsm70G7Eu9BuxLvQbsm70G7OO9Bu//vbcn/723J/+9tyf/v7+//7+/v/+/v
+        7//v7+//7+/v/+/v7//v7+//7+/v/+/v7//v7+//7+/v/+/v7//v7+//7+/v/+/v7//v7+//7+/v/+/v
+        7//vbcn/723J/+9tyf/vQLv/70G7OO9BuybvQbsS70G7Eu9BuybvQbs470G7/+9tyf/vbcn/723J/+/v
+        7//v7+//7+/v/+/v7//v7+//7+/v/+/v7//v7+//7+/v/+/v7//v7+//7+/v/+/v7//v7+//7+/v/+/v
+        7//v7+//7+/v/+9tyf/vbcn/723J/+9Au//vQbs470G7Ju9BuxLvQbsS70G7Ju9BuzjvQLv/723J/+9t
+        yf/vbcn/75XU/+9tyf/vldT/723J/++V1P/vbcn/75XU/+9tyf/vbcn/75XU/+9tyf/vbcn/75XU/+9t
+        yf/vldT/723J/+9tyf/vldT/723J/+9tyf/vbcn/70C7/+9BuzjvQbsm70G7Eu9BuxLvQbsm70G7OO9B
+        u//vbcn/723J/+9tyf/v7+//723J/+/v7//vbcn/7+/v/+/v7//v7+//723J/+9tyf/v7+//723J/+9t
+        yf/v7+//7+/v/+/v7//vbcn/7+/v/+/v7//vbcn/723J/+9tyf/vQbv/70G7OO9BuybvQbsS70G7Eu9B
+        uybvQbs470G7/+9tyf/vbcn/723J/+/v7//v7+//7+/v/+9tyf/v7+//723J/+/v7//vbcn/723J/+/v
+        7//vbcn/723J/+/v7//vr9z/723J/+9tyf/v7+//723J/+9tyf/vbcn/723J/+9Au//vQbs470G7Ju9B
+        uxLvQbsS70G7JO9BuzjvQLv/723J/+9tyf/vbcn/7+/v/+9tyf/v7+//723J/+/v7//v7+//7+/v/+9t
+        yf/v7+//7+/v/+/v7//vbcn/7+/v/+/v7//v7+//723J/+/v7//vbcn/723J/+9tyf/vbcn/70K8/+9B
+        uzjvQbsk70G7Eu9Buw7vQbsg70G7NO8/u//vZ8f/723J/+9tyf/vbcn/723J/+9tyf/vbcn/723J/+9t
+        yf/vbcn/723J/+9tyf/vbcn/723J/+9tyf/vbcn/723J/+9tyf/vbcn/723J/+9tyf/vbcn/723J/+9n
+        x//vPrr/70G7NO9BuyDvQbsO70G7DO9BuxrvQbss70K8/+9Uwf/vZ8f/723J/+9tyf/vbcn/723J/+9t
+        yf/vbcn/723J/+9tyf/vbcn/723J/+9tyf/vbcn/723J/+9tyf/vbcn/723J/+9tyf/vbcn/723J/+9t
+        yf/vZ8f/71TB/+81uP/vQbss70G7Gu9BuwzvQbsG70G7Eu9BuyLvQbs470O7/+8/u//vQLv/7z+7/+9B
+        u//vQLv/7z+7/+9Au//vQbv/70G7/+9Bu//vQLv/70C7/+9Au//vQLv/70C7/+9Au//vQLv/70C7/+9B
+        u//vQbv/70G7/+89uv/vNrj/70G7OO9BuyLvQbsS70G7Bu9BuwTvQbsK70G7FO9BuyLvQbss70G7NO9B
+        uzjvQbs470G7OO9BuzjvQbs470G7OO9BuzjvQbs470G7OO9BuzjvQbs470G7OO9BuzjvQbs470G7OO9B
+        uzjvQbs470G7OO9BuzjvQbs470G7NO9BuyzvQbsi70G7FO9BuwrvQbsEAAAAAO9BuwTvQbsK70G7Eu9B
+        uxrvQbsg70G7JO9BuybvQbsm70G7Ju9BuybvQbsm70G7Ju9BuybvQbsm70G7Ju9BuybvQbsm70G7Ju9B
+        uybvQbsm70G7Ju9BuybvQbsm70G7Ju9BuyTvQbsg70G7Gu9BuxLvQbsK70G7BAAAAAAAAAAAAAAAAO9B
+        uwTvQbsG70G7DO9Buw7vQbsS70G7Eu9BuxLvQbsS70G7Eu9BuxLvQbsS70G7Eu9BuxLvQbsS70G7Eu9B
+        uxLvQbsS70G7Eu9BuxLvQbsS70G7Eu9BuxLvQbsS70G7Eu9Buw7vQbsM70G7Bu9BuwQAAAAAAAAAAP//
+        //////////5////8P///+B////AP///gB///wAP/8AAAD+AAAAfgAAAH4AAAB+AAAAfgAAAH4AAAB+AA
+        AAfgAAAH4AAAB+AAAAfgAAAH4AAAB+AAAAfgAAAH4AAAB+AAAAfgAAAH4AAAB+AAAAfgAAAH4AAAB+AA
+        AAfgAAAH4AAAB/AAAA////////////////8=
+</value>
+  </data>
+</root>
