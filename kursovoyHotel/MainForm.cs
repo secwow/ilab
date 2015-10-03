@@ -19,11 +19,16 @@ namespace kursovoyHotel
         //public static VisitorList visitorList = new VisitorList();
         public int CELLS_NUM = 6;
 
+        
+
         public MainForm()
         {
             InitializeComponent();
 
             сохранитьToolStripMenuItem.Enabled = false;
+
+            dateTimePicker1.Value = DateTime.Today;
+            dateTimePicker2.Value = DateTime.Today.AddDays(7);
             
         }
 
@@ -40,11 +45,11 @@ namespace kursovoyHotel
 
                 int i = room.Num;
                 if (i <= CELLS_NUM * 2)
-                    cell.Style.BackColor = Color.LightGreen;
-                else if (i >= CELLS_NUM * 4 + 1)
                     cell.Style.BackColor = Color.LightCoral;
+                else if (i >= CELLS_NUM * 4 + 1)
+                    cell.Style.BackColor = Color.LightYellow;
                 else
-                    cell.Style.BackColor = Color.LightSteelBlue;
+                    cell.Style.BackColor = Color.Plum;
 
                 if (room.IsOccupied)
                     cell.Style.BackColor = Color.FromArgb(cell.Style.BackColor.A, cell.Style.BackColor.R - 40, cell.Style.BackColor.G - 40, cell.Style.BackColor.B - 40);
@@ -99,6 +104,8 @@ namespace kursovoyHotel
             else
                 label8.Text = "Люкс";
 
+            label12.BackColor = dataGridView1.SelectedCells[0].Style.BackColor;
+
             label10.Text = Convert.ToString(rom.NumOfBed);
             textBox3.Text = "";
             if (rom.CurrentVisitors.Count != 0)
@@ -116,11 +123,11 @@ namespace kursovoyHotel
         {
             try
             {
-                int kol = Convert.ToInt32(comboBox1.SelectedItem);
-                int min = Convert.ToInt32(textBox1.Text);
-                int max = Convert.ToInt32(textBox2.Text);
+                int kol = String.IsNullOrWhiteSpace(Convert.ToString(comboBox1.SelectedItem)) ? 0 : Convert.ToInt32(comboBox1.SelectedItem);
+                int min = String.IsNullOrWhiteSpace(textBox1.Text) ? 0 : Convert.ToInt32(textBox1.Text);
+                int max = String.IsNullOrWhiteSpace(textBox2.Text) ? 1000 : Convert.ToInt32(textBox2.Text);
 
-                List<int> res = roomList.FindRooms(min, max, kol);
+                List<int> res = roomList.FindRooms(min, max, kol, dateTimePicker1.Value, dateTimePicker2.Value);
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
                     foreach (DataGridViewCell cell in row.Cells)
@@ -290,10 +297,10 @@ namespace kursovoyHotel
         }
         
         // нажатие на кнопку "Сохранить изменения"
-        private void button9_Click(object sender, EventArgs e)
-        {
-            Save();
-        }
+        //private void button9_Click(object sender, EventArgs e)
+        //{
+        //    Save();
+        //}
 
         // нажатие на пункт меню "Справка"
         private void справкаToolStripMenuItem_Click(object sender, EventArgs e)

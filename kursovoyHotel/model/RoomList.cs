@@ -72,12 +72,13 @@ namespace kursovoyHotel.model
         }
 
         //осуществляет подбор комнат
-        public List<int> FindRooms(int priceMin, int priceMax, int bedNum)
+        public List<int> FindRooms(int priceMin, int priceMax, int bedNum, DateTime date1, DateTime date2)
         {
             var result =
                 from room in this
-                where (! room.IsOccupied) && room.NumOfBed == bedNum && 
-                room.Price >= priceMin && room.Price <= priceMax
+                where (! room.IsOccupied) && (bedNum == 0 || room.NumOfBed == bedNum) && 
+                room.Price >= priceMin && room.Price <= priceMax && 
+                ( ! room.IsOccupied || room.CurrentVisitors[0].DepatureDate < date1)
                 select room.Num;
             return new List<int>(result);
         }
