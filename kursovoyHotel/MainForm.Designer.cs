@@ -123,7 +123,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
@@ -400,17 +400,17 @@
             "4",
             "5",
             " "});
-            this.comboBox1.Location = new System.Drawing.Point(107, 72);
+            this.comboBox1.Location = new System.Drawing.Point(148, 74);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(56, 21);
+            this.comboBox1.Size = new System.Drawing.Size(46, 21);
             this.comboBox1.TabIndex = 6;
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(172, 106);
+            this.button3.Location = new System.Drawing.Point(203, 110);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 23);
+            this.button3.Size = new System.Drawing.Size(139, 23);
             this.button3.TabIndex = 8;
             this.button3.Text = "Сбросить";
             this.button3.UseVisualStyleBackColor = true;
@@ -419,9 +419,9 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(42, 106);
+            this.button2.Location = new System.Drawing.Point(56, 110);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 23);
+            this.button2.Size = new System.Drawing.Size(139, 23);
             this.button2.TabIndex = 7;
             this.button2.Text = "Подобрать";
             this.button2.UseVisualStyleBackColor = true;
@@ -429,23 +429,23 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(191, 41);
+            this.textBox2.Location = new System.Drawing.Point(222, 43);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(63, 20);
+            this.textBox2.Size = new System.Drawing.Size(46, 20);
             this.textBox2.TabIndex = 5;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(100, 41);
+            this.textBox1.Location = new System.Drawing.Point(148, 43);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(63, 20);
+            this.textBox1.Size = new System.Drawing.Size(46, 20);
             this.textBox1.TabIndex = 4;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label18.Location = new System.Drawing.Point(12, 73);
+            this.label18.Location = new System.Drawing.Point(53, 75);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(89, 16);
             this.label18.TabIndex = 0;
@@ -455,7 +455,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label17.Location = new System.Drawing.Point(279, 42);
+            this.label17.Location = new System.Drawing.Point(280, 44);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(33, 16);
             this.label17.TabIndex = 0;
@@ -465,7 +465,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label16.Location = new System.Drawing.Point(169, 42);
+            this.label16.Location = new System.Drawing.Point(200, 44);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(16, 16);
             this.label16.TabIndex = 0;
@@ -475,7 +475,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.Location = new System.Drawing.Point(12, 42);
+            this.label15.Location = new System.Drawing.Point(53, 44);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(81, 16);
             this.label15.TabIndex = 0;
@@ -485,7 +485,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(12, 12);
+            this.label14.Location = new System.Drawing.Point(53, 14);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(110, 16);
             this.label14.TabIndex = 0;
@@ -549,7 +549,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::kursovoyHotel.Properties.Resources.hotel;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(483, 376);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(810, 409);
             this.pictureBox1.TabIndex = 13;
