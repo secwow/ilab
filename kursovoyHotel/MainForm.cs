@@ -19,7 +19,7 @@ namespace kursovoyHotel
         //public static VisitorList visitorList = new VisitorList();
         public int CELLS_NUM = 6;
 
-        
+        String currentFile = "";
 
         public MainForm()
         {
@@ -169,16 +169,27 @@ namespace kursovoyHotel
         //сохранение базы
         private void Save()
         {
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            if (currentFile == "" || !File.Exists(currentFile))
+            {
+                SaveFileDialog saveFileDialog1 = new SaveFileDialog();
 
-            saveFileDialog1.Filter = "txt files (*.txt)|*.txt";
-            saveFileDialog1.FilterIndex = 1;
-            saveFileDialog1.RestoreDirectory = true;
+                saveFileDialog1.Filter = "txt files (*.txt)|*.txt";
+                saveFileDialog1.FilterIndex = 1;
+                saveFileDialog1.RestoreDirectory = true;
 
-            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    BinaryFormatter formatter = new BinaryFormatter();
+                    using (FileStream file = new FileStream(saveFileDialog1.FileName, FileMode.Create))
+                    {
+                        formatter.Serialize(file, roomList);
+                    }
+                }
+            }
+            else
             {
                 BinaryFormatter formatter = new BinaryFormatter();
-                using (FileStream file = new FileStream(saveFileDialog1.FileName, FileMode.Create))
+                using (FileStream file = new FileStream(currentFile, FileMode.Create))
                 {
                     formatter.Serialize(file, roomList);
                 }
@@ -209,6 +220,7 @@ namespace kursovoyHotel
                             roomList = (RoomList)formatter.Deserialize(file);
                         }
                         roomList.DeleteDelayed();
+                        currentFile = dialog.FileName;
                         //visitorList = new VisitorList(roomList);
                     }
                     catch (Exception excep)
@@ -225,6 +237,7 @@ namespace kursovoyHotel
         {
             Load();
             pictureBox1.Visible = false;
+            button9.Visible = false;
             сохранитьToolStripMenuItem.Enabled = true;
 
         }
@@ -233,9 +246,11 @@ namespace kursovoyHotel
         private void начатьЗановоToolStripMenuItem_Click(object sender, EventArgs e)
         {
             pictureBox1.Visible = false;
+            button9.Visible = false;
             FillTable();
             RefreshInfo();
             сохранитьToolStripMenuItem.Enabled = true;
+            currentFile = "";
         }
 
         //освобождение комнаты, кнопка активна, только если сегодня - день выезда
@@ -307,6 +322,23 @@ namespace kursovoyHotel
         {
             Help form = new Help();
             form.ShowDialog();
+        }
+
+        //предлодить сохранить при закрытии
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            switch (MessageBox.Show("Сохранить изменнения?", "Выход из программы", MessageBoxButtons.YesNoCancel))
+            {
+                case DialogResult.Yes:
+                    Save();
+                    break;
+                case DialogResult.No:
+                    break;
+                case DialogResult.Cancel:
+                    e.Cancel = true;
+                    return;
+
+            }
         }
     }
 }
