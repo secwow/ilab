@@ -51,7 +51,9 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -61,7 +63,7 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(250, 94);
+            this.textBox1.Size = new System.Drawing.Size(250, 100);
             this.textBox1.TabIndex = 0;
             // 
             // panel1
@@ -205,7 +207,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(294, 25);
+            this.label1.Location = new System.Drawing.Point(13, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 2;
@@ -215,16 +217,17 @@
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(297, 42);
+            this.comboBox1.Location = new System.Drawing.Point(16, 24);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(217, 21);
             this.comboBox1.TabIndex = 8;
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Location = new System.Drawing.Point(532, 25);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 70);
+            this.button2.Size = new System.Drawing.Size(114, 100);
             this.button2.TabIndex = 11;
             this.button2.Text = "Зарегестрировать и оформить квитанцию";
             this.button2.UseVisualStyleBackColor = true;
@@ -233,7 +236,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(294, 105);
+            this.label2.Location = new System.Drawing.Point(13, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 13);
             this.label2.TabIndex = 5;
@@ -241,7 +244,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(389, 99);
+            this.dateTimePicker1.Location = new System.Drawing.Point(108, 75);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(125, 20);
             this.dateTimePicker1.TabIndex = 10;
@@ -249,7 +252,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(294, 81);
+            this.label8.Location = new System.Drawing.Point(13, 57);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(72, 13);
             this.label8.TabIndex = 5;
@@ -257,10 +260,23 @@
             // 
             // dateTimePicker3
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(389, 75);
+            this.dateTimePicker3.Location = new System.Drawing.Point(108, 51);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(125, 20);
             this.dateTimePicker3.TabIndex = 9;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.dateTimePicker3);
+            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Location = new System.Drawing.Point(284, 25);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(242, 100);
+            this.panel2.TabIndex = 12;
             // 
             // RegistrationForm
             // 
@@ -269,13 +285,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(674, 486);
-            this.Controls.Add(this.dateTimePicker3);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -283,6 +294,8 @@
             this.Text = "Регистрация гостей в номер ";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,5 +325,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel2;
     }
 }
